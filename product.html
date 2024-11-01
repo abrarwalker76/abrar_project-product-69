@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="styleproduct.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="images/golden revolver.jpg" alt="golden " id="productImg">
+                <div class="control">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1> revolver</h1>
+                <h2> rp 18.000.000 </h2>
+                <h3>Discount 40%</h3>
+                <p>A revolver is a repeating handgun that has at least one barrel and uses a revolving cylinder containing multiple chambers (each holding a single cartridge) for firing. Because most revolver models hold up to six cartridges, before needing to be reloaded, revolvers are commonly called six shooters or sixguns</p>
+                <form>
+                    <div class="option">
+                        <p> Option :> </p>
+                        <label for="ALFA Steel Revolvers">
+                            <input type="checkbox" name="option" id="ALFA Steel Revolvers">
+                            <span>czech revolver</span>
+                        </label>
+                        <label for="Arminius HW Revolver Series">
+                            <input type="checkbox" name="option" id="Arminius HW Revolver Series">
+                            <span>german revolver</span>
+                        </label>
+                        <label for="Bossu Revolver">
+                            <input type="checkbox" name="option" id="Bossu Revolver">
+                            <span>belgian revolver</span>
+                        </label>    
+                    </div>
+
+                    <div class="color">
+                        <p>color</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red" data-image="images/gun image.jpg">
+                            <span class="color-1"></span>
+                        </label>                   
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue" data-image="images/golden revolver.jpg">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="brown">
+                            <input type="radio" name="color" id="brown" data-image="images/gun something.jpg">
+                            <span class="color-3"></span>
+                        </label>
+                    </div>
+                    <div class="quantity">
+                        <p>Quantity</p>
+                        <input type="number" id="quantityinput" value="1" min="0">
+                        <p id="stock info"></p>
+                    </div>
+                    <a href="#"><button type="button" id="buybutton">add to cart</button></a>
+                </form>
+            </div>
+        </div> 
+    </div> 
+    <script type="text/javascript" src="scriptproduct.js"></script>
+</body>
+</html>
